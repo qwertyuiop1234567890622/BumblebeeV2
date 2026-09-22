@@ -6,10 +6,10 @@ public class Teleop {
     private DcMotor motor;
 
     public void init(HardwareMap hwMap) {
-        motor=hwMap.get(DcMotor.class, "motorTopLeft");
+        motor=hwMap.get(DcMotor.class, "top left");
         motor.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         //motor.setMode(DcMotor.RunMode.RUN_)
-        motor.setTargetPosition(2);
+        //motor.setTargetPosition(2);
     }
 
     public void setMotorSpeed(double speed){

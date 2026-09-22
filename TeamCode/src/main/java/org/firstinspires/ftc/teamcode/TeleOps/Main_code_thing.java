@@ -3,10 +3,8 @@ package org.firstinspires.ftc.teamcode.TeleOps;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
-import org.firstinspires.ftc.teamcode.TeleOps.Teleop;
-
 @TeleOp
-public class Thinggy_code_I_guess {
+public class Main_code_thing extends OpMode {
     Teleop bob = new Teleop();
     @Override
     public void init(){
@@ -15,6 +13,8 @@ public class Thinggy_code_I_guess {
 
     @Override
     public void loop(){
-        bob.setMotorSeed(0.5);
+        bob.setMotorSpeed(0.5);
+        telemetry.addData("Motor Power", 0.5);
+        telemetry.update();
     }
 }
