@@ -9,7 +9,7 @@ public class Teleop {
         motor=hwMap.get(DcMotor.class, "motorTopLeft");
         motor.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         //motor.setMode(DcMotor.RunMode.RUN_)
-        motor.setTargetPosition(2);
+        //motor.setTargetPosition(2);
     }
 
     public void setMotorSpeed(double speed){
